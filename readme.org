@@ -1,0 +1,6 @@
+
+* Lista de opciones responsive - css
+** Introducción
+En el proyecto de notitas la barra superior no se adapta a todos los tamaños, así que pené crear una lista de obciones cuando la pantalla sea más pequeña.
+
+*Nota:* Espero lograrlo.
