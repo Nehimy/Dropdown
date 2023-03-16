@@ -2,11 +2,15 @@
 
 :root {
     --gray:  #807f7f;
+    --graylight: #e8e8ff;
     --lilac: #5252df;
+    --lilalight: #4444c4;
     --white: white;
 }
 
-
+* {
+  box-sizing: border-box;
+}
 
 body {
     margin: 0px;
@@ -30,6 +34,7 @@ body {
   display: grid;
   justify-content: start;
   align-content: center;
+  margin: 0px 0px 0px 10px;
 }
 .mando {
     width: 80px;
@@ -57,14 +62,33 @@ li {
     font-size: x-large;
 }
 
-.container-svg {
+.container-dropdown {
   display: grid;
   grid-column-start: 3;
   grid-column-end: 4;
   place-content: center;
+
+  width: 50px;
+  height: 45px;
 }
 
-/* svg { */
-/* display:grid; */
-/* align-items: center; */
-/* } */
+
+.container-dropdown:hover {
+    background: var(--lilalight);
+}
+
+.menu {
+    background: transparent;
+    border: none;
+    justify-content: end;
+    align-content: center;
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 0 10px 0px 0px;
+}
+
+.color:hover{
+    stroke: var(--graylight);
+
+}
