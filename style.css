@@ -33,7 +33,8 @@ body {
 
 .mando {
     height: 60px;
-    justify-self: end;
+    /* justify-self: end; */
+    margin-left: 10px;
 }
 
 .container-dropdown {
@@ -55,13 +56,4 @@ input:checked + .dropdown {
 
 .container-dropdown input, .dropdown {
     display: none;
-}
-
-.oculto,
-.dropdown-trigger input {
-    display: none;
-}
-
-input:checked + .oculto {
-    display: block;
 }
