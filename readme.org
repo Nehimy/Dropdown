@@ -59,7 +59,7 @@ Primero hay 3 cosas para recordar:
 
 - *dropdown:* Es el contenedor de la lista de enlaces.
 
-[[https://imgur.com/Wlcenl1]]
+[[https://imgur.com/Wlcenl1.png]]
 
 - Uno gran gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic
 la lista o obciones provocaba que se deformara o desalineara.
