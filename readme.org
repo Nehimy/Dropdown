@@ -51,3 +51,15 @@ stroke-width: Ancho del trazo.
 <g>   : El elemento SVG es un contenedor que se utiliza para
 agrupar otros elementos SVG.
 #+end_example
+** Explicación dropdown y dificultades
+1. Uno gran gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic
+la lista o obciones provocaba que se desalineara.
+
+Corregí ese error dandole una posición relativa al "container-dropdown" y una posición absoluta al "input:checked + .dropdown".
+
+2. Ahora que podía hacer clic y ver la lista sin que algo se deformara, la lista no se llegaba a ver como las webs que use de referencia.
+Así que definí como quería que se viera y luego modifiqué el "input:checked + .dropdown" dandole un ancho de "100vw" y un" right: 0"; pero aún tenia defectos ya que tapaba el logo.
+
+Entonces le dí un top de 100px que no llego a verse bien porque la posición relativa del contenedor "container-dropdown".
+
+Básicamente "input:checked + .dropdown" toma el punto 0 en Y del contendor "container-dropdown"; así que quito la posiciónrelativa al  "container-dropdown"; para que tome el punto "0" de el "header

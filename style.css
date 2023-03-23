@@ -40,20 +40,41 @@ body {
 .container-dropdown {
     align-self: center;
     justify-self: end;
+    /* position: relative; */
 }
 
-/************/
-/* Dropdown */
-/************/
+/***************/
+/*  Dropdown   */
+/***************/
 
 /* Visible */
 
 input:checked + .dropdown {
     display: block;
+    position: absolute;
+    background: var(--lilac);
+
+    width: 100vw;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    top: 100px;
+    box-shadow: 0px 8px 12px #807f7f9e;
+    font-size: large;
 }
 
 /*Hidden*/
 
 .container-dropdown input, .dropdown {
     display: none;
+}
+
+/************************/
+/*  Estilo de la lista  */
+/************************/
+.dropdown a {
+    color: var(--white);
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    text-decoration: none;
 }
