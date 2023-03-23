@@ -34,7 +34,7 @@ Acontinuación una de las formas que encontré para crear las lineas.
 </svg>
 #+end_src
 
-** Bocabulario:
+** Vocabulario:
  Para por comprender esto de dibujar en SVG puro sin insertar una img. ya creada tube que aprender
  muchas palabra y etiquetas.
 
@@ -52,8 +52,16 @@ stroke-width: Ancho del trazo.
 agrupar otros elementos SVG.
 #+end_example
 ** Explicación dropdown y dificultades
-1. Uno gran gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic
-la lista o obciones provocaba que se desalineara.
+Primer hay 3 cosas para recordar:
+- *header :* Contenedor de la barra superior.
+
+- *container-dropdown:* Es el contendor del dropdown.
+
+- *dropdown:* Es el contenedor de la lista de enlaces.
+
+- Uno gran gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic
+la lista o obciones provocaba que se deformara o desalineara.
+[[https://i.imgur.com/qYFJWDR.gif]]
 
 Corregí ese error dandole una posición relativa al "container-dropdown" y una posición absoluta al "input:checked + .dropdown".
 
