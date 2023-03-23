@@ -52,12 +52,14 @@ stroke-width: Ancho del trazo.
 agrupar otros elementos SVG.
 #+end_example
 ** Explicación dropdown y dificultades
-Primer hay 3 cosas para recordar:
+Primero hay 3 cosas para recordar:
 - *header :* Contenedor de la barra superior.
 
 - *container-dropdown:* Es el contendor del dropdown.
 
 - *dropdown:* Es el contenedor de la lista de enlaces.
+
+[[https://imgur.com/Wlcenl1]]
 
 - Uno gran gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic
 la lista o obciones provocaba que se deformara o desalineara.
