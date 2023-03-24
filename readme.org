@@ -70,7 +70,7 @@ Corregí ese error dandole una posición relativa al *container-dropdown* y una 
 
 Ahora que podía hacer clic y ver la lista sin que se deformara, la lista no se llegaba a ver como las webs que use de referencia.
 
-[[https://imgur.com/Wlcenl1.png]]
+[[https://imgur.com/YQsAedq.png]]
 
 Así que definí como quería que se viera y luego modifiqué el *input:checked + .dropdown* dandole un ancho de *100vw* y un *right: 0*; pero aún tenia defectos ya que tapaba el logo. Entonces le dí un *top de 100px* que no llego a verse bien debido la posición relativa del contenedor *container-dropdown*.
 
