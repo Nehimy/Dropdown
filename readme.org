@@ -62,8 +62,8 @@ Primero hay 3 cosas para recordar:
 [[https://imgur.com/Wlcenl1.png]]
 
 - Uno gran, gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic (en las 3 lineas)
-la lista de obciones se deformaba
-.
+la lista de opciones se deformaba.
+
 [[https://i.imgur.com/qYFJWDR.gif]]
 
 Corregí ese error dandole una posición relativa al *container-dropdown* y una posición absoluta al *input:checked + .dropdown*.
