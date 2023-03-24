@@ -1,16 +1,32 @@
 
 * Dropdown
-Yo no  sabia que  una lista de opciones responsive se llamaba dropdown.
-** Introducción
-En el proyecto de notitas la barra superior no se adapta a todos los tamaños, así que pené crear una lista de obciones cuando la pantalla sea más pequeña.
+Yo no  sabia que  una lista de opciones deplegada por medio de un botón se llamaba dropdown.
 
-*Nota:* Espero lograrlo.
+La primer dificultad que tuve fue crear la apariencia del botón, podría solo insertar una imagen pero, deseaba aprender algo nuevo he hice lo siguiente.
 
 ** SVG de 3 lineas
-Para este pequeño ejemplo quede encaprichada con la idea de generar las 3 lineas mediante código svg.
+Para este pequeño ejemplo quedé encaprichada con la idea de generar las 3 lineas mediante código svg.
+
+** Vocabulario:
+ Para comprender esto de dibujar en SVG puro tube que aprender muchas palabras y etiquetas.
+
+#+begin_example
+fill  : Rellenar.
+stroke: Trazo.
+path  : Camino, trayectoria.
+d     : El atributo d define un camino a dibujar.
+M     : moveto
+L     : lineto
+square: cuadrado.
+butt  : Extremo.
+stroke-width: Ancho del trazo.
+<g>   : El elemento SVG es un contenedor que se utiliza para
+agrupar otros elementos SVG.
+#+end_example
 
 ** Ejemplo 1
 Acontinuación una de las formas que encontré para crear las lineas.
+
 #+begin_src html
 <svg  version="1.1" height="30" width="60">
   <line x1="10" y1="5" x2="50" y2="5"
@@ -34,25 +50,9 @@ Acontinuación una de las formas que encontré para crear las lineas.
 </svg>
 #+end_src
 
-** Vocabulario:
- Para por comprender esto de dibujar en SVG puro sin insertar una img. ya creada tube que aprender
- muchas palabra y etiquetas.
-
-#+begin_example
-fill  : Rellenar.
-stroke: Trazo.
-path  : Camino, trayectoria.
-d     : El atributo d define un camino a dibujar.
-M     : moveto
-L     : lineto
-square: cuadrado.
-butt  : Extremo.
-stroke-width: Ancho del trazo.
-<g>   : El elemento SVG es un contenedor que se utiliza para
-agrupar otros elementos SVG.
-#+end_example
 ** Explicación sobre el dropdown y dificultades
 Primero hay 3 cosas para recordar:
+
 - *header :* Contenedor de la barra superior.
 
 - *container-dropdown:* Es el contendor del dropdown.
@@ -62,18 +62,18 @@ Primero hay 3 cosas para recordar:
 [[https://imgur.com/Wlcenl1.png]]
 
 - Uno gran, gran problema para mi fue que el dropdown estuviera fijo en una posición ya que al hacer clic (en las 3 lineas)
-la lista de obciones se deformaba.
+la lista de obciones se deformaba
+.
 [[https://i.imgur.com/qYFJWDR.gif]]
 
-Corregí ese error dandole una posición relativa al "container-dropdown" y una posición absoluta al "input:checked + .dropdown".
+Corregí ese error dandole una posición relativa al *container-dropdown* y una posición absoluta al *input:checked + .dropdown*.
 
-Ahora que podía hacer clic y ver la lista sin que algo se deformara, la lista no se llegaba a ver como las webs que use de referencia.
+Ahora que podía hacer clic y ver la lista sin que se deformara, la lista no se llegaba a ver como las webs que use de referencia.
 
 [[https://imgur.com/Wlcenl1.png]]
-Así que definí como quería que se viera y luego modifiqué el "input:checked + .dropdown" dandole un ancho de "100vw" y un" right: 0"; pero aún tenia defectos ya que tapaba el logo.
 
-Entonces le dí un top de 100px que no llego a verse bien porque la posición relativa del contenedor "container-dropdown".
+Así que definí como quería que se viera y luego modifiqué el *input:checked + .dropdown* dandole un ancho de *100vw* y un *right: 0*; pero aún tenia defectos ya que tapaba el logo. Entonces le dí un *top de 100px* que no llego a verse bien debido la posición relativa del contenedor *container-dropdown*.
 
 [[https://imgur.com/bqhvzSu.gif]]
 
-Básicamente "input:checked + .dropdown" toma el punto 0 en Y del contendor "container-dropdown"; así que quito la posiciónrelativa al  "container-dropdown"; para que tome el punto "0" de el "header
+Básicamente *input:checked + .dropdown* toma el punto 0 del contendor *container-dropdown*, por lo tanto quito la posición relativa al  *container-dropdown* para que tome el punto "0" de el *header*.
